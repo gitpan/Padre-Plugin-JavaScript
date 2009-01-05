@@ -8,7 +8,7 @@ use strict;
 use warnings;
 use Class::Autouse 'Padre::Document::JavaScript';
 
-our $VERSION = '0.23';
+our $VERSION = '0.24';
 
 use base 'Padre::Plugin';
 
@@ -16,7 +16,7 @@ use base 'Padre::Plugin';
 # Padre::Plugin API Methods
 
 sub padre_interfaces {
-	'Padre::Plugin'          => 0.21,
+	'Padre::Plugin'          => 0.23,
 	'Padre::Document'        => 0.21,
 }
 
@@ -35,8 +35,8 @@ sub menu_plugins_simple {
 sub js_eautifier {
 	my ( $win) = @_;
 
-	my $src = $win->selected_text;
-	my $doc = $win->selected_document;
+	my $src = $win->current->text;
+	my $doc = $win->current->document;
 	my $code = $src ? $src : $doc->text_get;
 	return unless ( defined $code and length($code) );
 
@@ -49,7 +49,7 @@ sub js_eautifier {
     } );
     
     if ( $src ) {
-		my $editor = $win->selected_editor;
+		my $editor = $win->current->editor;
 	    $editor->ReplaceSelection( $pretty_js );
 	} else {
 		$doc->text_set( $pretty_js );
@@ -59,8 +59,8 @@ sub js_eautifier {
 sub js_minifier {
 	my ( $win) = @_;
 
-	my $src = $win->selected_text;
-	my $doc = $win->selected_document;
+	my $src = $win->current->text;
+	my $doc = $win->current->document;
 	my $code = $src ? $src : $doc->text_get;
 	return unless ( defined $code and length($code) );
 
@@ -70,7 +70,7 @@ sub js_minifier {
 	my $mjs = minify( $code );
     
     if ( $src ) {
-		my $editor = $win->selected_editor;
+		my $editor = $win->current->editor;
 	    $editor->ReplaceSelection( $mjs );
 	} else {
 		$doc->text_set( $mjs );

@@ -29,11 +29,11 @@ requires:
   Exporter: 0
   JavaScript::Beautifier: 0.03
   JavaScript::Minifier::XS: 0
-  Padre: 0.21
+  Padre: 0.23
   perl: 5.008001
 resources:
   bugtracker: http://padre.perlide.org/
   homepage: http://padre.perlide.org/
   license: http://dev.perl.org/licenses/
   repository: http://svn.perlide.org/padre/trunk/Padre-Plugin-JavaScript
-version: 0.23
+version: 0.24
