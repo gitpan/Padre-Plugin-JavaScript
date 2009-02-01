@@ -7,7 +7,7 @@ build_requires:
   Test::NeedsDisplay: 1.05
   Test::NoWarnings: 0.084
 distribution_type: module
-generated_by: 'Module::Install version 0.77'
+generated_by: 'Module::Install version 0.78'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,13 +15,6 @@ meta-spec:
 name: Padre-Plugin-JavaScript
 no_index:
   directory:
-    -
-      - t
-      - xt
-      - eg
-      - share
-      - inc
-      - privinc
     - inc
     - t
 requires:
@@ -29,11 +22,11 @@ requires:
   Exporter: 0
   JavaScript::Beautifier: 0.03
   JavaScript::Minifier::XS: 0
-  Padre: 0.23
+  Padre: 0.26
   perl: 5.008001
 resources:
   bugtracker: http://padre.perlide.org/
   homepage: http://padre.perlide.org/
   license: http://dev.perl.org/licenses/
   repository: http://svn.perlide.org/padre/trunk/Padre-Plugin-JavaScript
-version: 0.24
+version: 0.25
