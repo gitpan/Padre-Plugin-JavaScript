@@ -1,13 +1,16 @@
 ---
-abstract: "L<Padre> and JavaScript\r"
+abstract: 'L<Padre> and JavaScript'
 author:
   - 'Gabor Szabo'
 build_requires:
+  ExtUtils::MakeMaker: 6.42
   Test::More: 0.47
   Test::NeedsDisplay: 1.05
   Test::NoWarnings: 0.084
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.78'
+generated_by: 'Module::Install version 1.00'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,13 +23,14 @@ no_index:
 requires:
   Class::Autouse: 1.26
   Exporter: 0
+  JE: 0
   JavaScript::Beautifier: 0.03
   JavaScript::Minifier::XS: 0
-  Padre: 0.26
+  Padre: 0.43
   perl: 5.008001
 resources:
   bugtracker: http://padre.perlide.org/
   homepage: http://padre.perlide.org/
   license: http://dev.perl.org/licenses/
   repository: http://svn.perlide.org/padre/trunk/Padre-Plugin-JavaScript
-version: 0.25
+version: 0.26

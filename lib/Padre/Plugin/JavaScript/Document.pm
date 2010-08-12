@@ -1,4 +1,4 @@
-package Padre::Document::JavaScript;
+package Padre::Plugin::JavaScript::Document;
 
 use 5.008;
 use strict;
@@ -6,11 +6,8 @@ use warnings;
 use Carp            ();
 use Padre::Document ();
 
-our $VERSION = '0.24';
+our $VERSION = '0.26';
 our @ISA     = 'Padre::Document';
-
-
-
 
 
 #####################################################################

@@ -8,10 +8,11 @@ all_from       'lib/Padre/Plugin/JavaScript.pm';
 
 requires       'perl'                    => '5.008001';
 requires       'Exporter'                => 0;
-requires       'Padre'                   => '0.26';
+requires       'Padre'                   => '0.43';
 requires       'Class::Autouse'          => '1.26';
 requires       'JavaScript::Beautifier'  => '0.03';
 requires       'JavaScript::Minifier::XS';
+requires       'JE';
 
 test_requires  'Test::More'              => '0.47';
 test_requires  'Test::NeedsDisplay'      => '1.05';
@@ -22,5 +23,8 @@ homepage       'http://padre.perlide.org/';
 bugtracker     'http://padre.perlide.org/';
 repository     'http://svn.perlide.org/padre/trunk/Padre-Plugin-JavaScript';
 #mailinglist    'http://mail.perlide.org/mailman/listinfo/padre-dev';
+
+is_padre_plugin; # authors: Install Module::Install::PadrePlugin
+use_ptar() if author_context && $^O =~/win/i; #from Module::Install::PerlTar
  
 WriteAll;
