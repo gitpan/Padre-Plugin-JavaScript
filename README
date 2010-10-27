@@ -1,11 +1,13 @@
 
-Padre::Plugin::JavaScript - JavaScript support of Padre
 
-installation:
+This archive contains the distribution Padre-Plugin-JavaScript,
+version 0.27:
 
-Padre
+  L<Padre> and JavaScript
 
-For detailed installation look at 
+This software is copyright (c) 2010 by Fayland Lam.
 
-http://padre.perlide.org/wiki/Download
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 
