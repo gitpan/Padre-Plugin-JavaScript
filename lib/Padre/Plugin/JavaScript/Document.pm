@@ -1,6 +1,6 @@
 package Padre::Plugin::JavaScript::Document;
 BEGIN {
-  $Padre::Plugin::JavaScript::Document::VERSION = '0.27';
+  $Padre::Plugin::JavaScript::Document::VERSION = '0.28';
 }
 
 # ABSTRACT: JavaScript Document for Padre
@@ -41,7 +41,7 @@ Padre::Plugin::JavaScript::Document - JavaScript Document for Padre
 
 =head1 VERSION
 
-version 0.27
+version 0.28
 
 =head1 AUTHORS
 

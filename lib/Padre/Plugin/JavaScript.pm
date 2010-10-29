@@ -1,14 +1,13 @@
 package Padre::Plugin::JavaScript;
 BEGIN {
-  $Padre::Plugin::JavaScript::VERSION = '0.27';
+  $Padre::Plugin::JavaScript::VERSION = '0.28';
 }
 
-# ABSTRACT: L<Padre> and JavaScript
+# ABSTRACT: JavaScript Support for Padre
 
 use 5.008;
 use strict;
 use warnings;
-use Class::Autouse 'Padre::Plugin::JavaScript::Document';
 
 use base 'Padre::Plugin';
 
@@ -111,11 +110,11 @@ sub _get_code {
 
 =head1 NAME
 
-Padre::Plugin::JavaScript - L<Padre> and JavaScript
+Padre::Plugin::JavaScript - JavaScript Support for Padre
 
 =head1 VERSION
 
-version 0.27
+version 0.28
 
 =head1 JavaScript Beautifier
 

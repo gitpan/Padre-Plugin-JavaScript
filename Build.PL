@@ -14,20 +14,19 @@ my %module_build_args = (
   'configure_requires' => {
     'Module::Build' => '0.3601'
   },
-  'dist_abstract' => 'L<Padre> and JavaScript',
+  'dist_abstract' => 'JavaScript Support for Padre',
   'dist_author' => [
     'Fayland Lam <fayland@gmail.com>',
     'Adam Kennedy <adamk@cpan.org>',
     'Ahmad M. Zawawi <ahmad.zawawi@gmail.com>'
   ],
   'dist_name' => 'Padre-Plugin-JavaScript',
-  'dist_version' => '0.27',
+  'dist_version' => '0.28',
   'license' => 'perl',
   'module_name' => 'Padre::Plugin::JavaScript',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
-    'Class::Autouse' => '1.26',
     'Exporter' => '0',
     'JE' => '0',
     'JavaScript::Beautifier' => '0.03',
