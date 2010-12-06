@@ -1,6 +1,6 @@
 package Padre::Plugin::JavaScript;
 BEGIN {
-  $Padre::Plugin::JavaScript::VERSION = '0.28';
+  $Padre::Plugin::JavaScript::VERSION = '0.29';
 }
 
 # ABSTRACT: JavaScript Support for Padre
@@ -114,7 +114,7 @@ Padre::Plugin::JavaScript - JavaScript Support for Padre
 
 =head1 VERSION
 
-version 0.28
+version 0.29
 
 =head1 JavaScript Beautifier
 
